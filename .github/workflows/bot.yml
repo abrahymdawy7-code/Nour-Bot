@@ -1,9 +1,9 @@
 name: Nour-Bot 24h
 on:
   workflow_dispatch:
-  push:
   schedule:
-    - cron: "0 */5 * * *"
+    - cron: '0 */5 * * *'
+
 jobs:
   bot:
     runs-on: ubuntu-latest
@@ -16,3 +16,4 @@ jobs:
       - run: python main.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          TOKEN: ${{ secrets.BOT_TOKEN }}
