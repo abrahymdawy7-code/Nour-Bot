@@ -2,7 +2,7 @@ name: Nour-Bot 24h
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */5 * * *'
+    - cron: '*/4 * * * *'
 jobs:
   bot:
     runs-on: ubuntu-latest
