@@ -15,4 +15,3 @@ jobs:
       - run: python main.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          TOKEN: ${{ secrets.BOT_TOKEN }}
